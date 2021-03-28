@@ -3,6 +3,7 @@ using System.Net;
 using System.Net.Sockets;
 using System.Threading;
 using System.Text;
+using System.Globalization;
 
 namespace WebServer
 {
@@ -29,10 +30,7 @@ namespace WebServer
 
             listener.Start();
 
-            while (true)
-            {
-                HandleIncomingConnections();
-            }
+            HandleIncomingConnections();
         }
 
         void HandleIncomingConnections()
@@ -43,6 +41,17 @@ namespace WebServer
             HttpListenerResponse response = incomingConnection.Response;
 
             Console.WriteLine("Connection established with {0}", request.UserHostAddress);
+
+            SendResponseHttp(response, Console.ReadLine());
+        }
+
+        void SendResponseHttp(HttpListenerResponse response, string responseString)
+        {
+            byte[] responseBytes = Encoding.ASCII.GetBytes(responseString);
+
+            response.OutputStream.Write(responseBytes, 0, responseBytes.Length);
+
+            Console.WriteLine($"Sent: {responseString}");
         }
     }
 }
