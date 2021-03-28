@@ -1,0 +1,7 @@
+D:\SoftwareDev\webserver\csharp\WebServer\WebServer\obj\Debug\WebServer.csprojAssemblyReference.cache
+D:\SoftwareDev\webserver\csharp\WebServer\WebServer\obj\Debug\WebServer.csproj.CoreCompileInputs.cache
+D:\SoftwareDev\webserver\csharp\WebServer\WebServer\bin\Debug\WebServer.exe.config
+D:\SoftwareDev\webserver\csharp\WebServer\WebServer\bin\Debug\WebServer.exe
+D:\SoftwareDev\webserver\csharp\WebServer\WebServer\bin\Debug\WebServer.pdb
+D:\SoftwareDev\webserver\csharp\WebServer\WebServer\obj\Debug\WebServer.exe
+D:\SoftwareDev\webserver\csharp\WebServer\WebServer\obj\Debug\WebServer.pdb
