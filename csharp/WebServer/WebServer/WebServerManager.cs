@@ -8,7 +8,7 @@ namespace WebServer
     {
         static void Main()
         {
-            var server = new TcpWebServer();
+            var server = new HttpWebServer();
 
             Console.ReadKey();
         }

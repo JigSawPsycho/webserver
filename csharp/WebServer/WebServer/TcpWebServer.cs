@@ -45,6 +45,10 @@ namespace WebServer
 
                 Console.WriteLine("Response: {0}", response);
 
+                byte[] sendBytes = Encoding.ASCII.GetBytes("<p> ooga booga </p>");
+
+                stream.Write(sendBytes, 0, sendBytes.Length);
+
             } catch (Exception e)
             {
                 Console.WriteLine($"Error establishing connection: {e.Message}");
